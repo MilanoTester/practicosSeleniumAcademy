@@ -1,0 +1,475 @@
+Práctico 1: Pseudocódigo
+
+Comandos a utilizar:
+INICIO: inicio del programa.
+TECLADO: activar el ingreso de datos a través del teclado.
+GUARDAR: guardar en memoria un dato ingresado a través del teclado.
+MOSTRAR: imprimir en pantalla un mensaje.
+FIN: fin del programa.
+
+------------------------------
+Ejercicios:
+
+1. Mostrar “Holamundo” en pantalla
+INICIO
+  MOSTRAR “Holamundo”;
+FIN
+
+2. Pedir el ingreso del nombre y el año de nacimiento. Mostrar el nombre y la edad de la persona.
+INICIO
+  TECLADO;
+  String nombre;
+  int año;
+  MOSTRAR “Ingrese su nombre”;
+  GUARDAR nombre;
+  MOSTRAR “Ingrese su año de nacimiento”;
+  GUARDAR año;
+
+  int edad = 2020 - año;
+  MOSTRAR “ Su nombre es “ + nombre + “ y su edad es “ + edad;
+FIN
+
+3. Pedir el ingreso de 3 números y mostrar la suma de ellos.
+INICIO
+  int num1 = 0;
+  int num2 = 0;
+  int num3 = 0;
+  int suma = 0;
+  TECLADO;
+  MOSTRAR “Ingrese un número:”;
+  GUARDAR num1;
+  MOSTRAR “Ingrese otro número:”;
+  GUARDAR num2;
+  MOSTRAR “Ingrese otro número:”;
+  GUARDAR num3;
+  suma = num1 + num2 + num3;
+  MOSTRAR “La suma es “ + suma;
+FIN
+
+4. Pedir el ingreso de un dato, e indicar si es menor o mayor a 0.
+INICIO
+  int dato = 0;
+  TECLADO;
+  MOSTRAR “Ingrese un dato”;
+  GUARDAR dato;
+
+  if ( dato > 0 ) {  
+    MOSTRAR “El número es mayor a 0”;
+  } else if ( dato < 0 ) {
+    MOSTRAR “El número es menor a 0”;
+  } else {
+    MOSTRAR “El número es igual a 0”;
+  } 
+FIN
+
+5. Pedir el ingreso de 3 números, indicar si hay números repetidos.
+INICIO
+  TECLADO;
+  int num1 = 0;
+  int num2 = 0;
+  int num3 = 0;
+
+  MOSTRAR “Ingrese un numero”;
+  GUARDAR num1;
+  MOSTRAR “Ingrese un segundo número”;
+  GUARDAR num2;
+  MOSTRAR “Ingrese el tercer número”;
+  GUARDAR num3;
+  if ( num1 == num2 ) {
+    MOSTRAR “Hay números repetidos”;
+  }
+
+  if (num2 == num3) {
+    MOSTRAR “Hay números repetidos”;
+  }
+
+  if (num1 == num3) {
+    MOSTRAR “Hay números repetidos!!”;
+  }
+FIN
+
+6. Pedir el ingreso de 3 números, indicar si hay números repetidos utilizando solo un IF.
+INICIO
+  TECLADO;
+  int num1 = 0;
+  int num2 = 0;
+  int num3 = 0;
+
+  MOSTRAR “Ingrese un numero”;
+  GUARDAR num1;
+  MOSTRAR “Ingrese un segundo número”;
+  GUARDAR num2;
+  MOSTRAR “Ingrese el tercer número”;
+  GUARDAR num3;
+
+  if ( num1 == num2 || num1 == num3 || num2 == num3 ) {
+    MOSTRAR “Hay números repetidos”;
+  } 
+FIN
+
+7. Pedir el ingreso de 3 números e indicar si NO hay repetidos, es decir, si son todos diferentes.
+INICIO
+  TECLADO;
+  int num1 = 0;
+  int num2 = 0;
+  int num3 = 0;
+
+  MOSTRAR “Ingrese un numero”;
+  GUARDAR num1;
+  MOSTRAR “Ingrese un segundo número”;
+  GUARDAR num2;
+  MOSTRAR “Ingrese el tercer número”;
+  GUARDAR num3;
+
+  if ( num1 == num2 || num1 == num3 || num2 == num3 ) {
+    MOSTRAR “Hay números repetidos”;
+  } else {
+    MOSTRAR “NO hay números repetidos!!”;
+  }
+FIN
+
+8. Pedir el ingreso de números hasta que aparezca uno negativo.
+INICIO
+  TECLADO;
+  int num = 0;
+	
+  MOSTRAR “Ingrese números hasta ingresar uno negativo”;
+
+  while ( num >= 0 ) {
+    MOSTRAR “Ingrese un numero”;
+    GUARDAR num;
+  }
+  MOSTRAR “El programa ha finalizado ya que se ingreso un número negativo.”;
+FIN
+
+9. Programa Java que pida un número NUM ingresado por el usuario. Luego muestre los números desde 1 hasta NUM utilizando la instrucción for. Ejemplo. NUM = 5 ---> 1 2 3 4 5.
+INICIO
+  TECLADO;
+  int num = 0;
+
+  MOSTRAR “Ingrese un número”;
+  GUARDAR num;
+
+  for (int i=1; i<=num; i++) {
+    MOSTRAR i;
+  }
+FIN
+
+10. Programa Java que lea dos números y muestre los números entre ellos.
+INICIO
+  TECLADO;
+  int usernum1;
+  int usernum2;
+  int num1;
+  int num2;
+  int i = 0;
+
+  MOSTRAR “Ingrese el primer número”;
+  GUARDAR usernum1;
+  MOSTRAR “Ingrese el segundo número”;
+  GUARDAR usernum2;
+
+  if (usernum1 < usernum2) {
+    num1 = usernum1;
+    num2 = usernum2;
+  } else {
+    num1 = usernum2;
+    num2 = usernum1;
+  }
+
+  for ( i=num1; i<=num2; i++ ) {
+    MOSTRAR i;
+  }
+FIN
+
+11. Programa que lea 6 números e indique en pantalla si son positivos o negativos y pares o impares.
+Ej. 5 : es positivo e impar
+Ej. -4: es negativo y par
+
+INICIO
+  TECLADO;
+  int i = 1;
+  int num = 0;
+  String cond1 = "";
+  String cond2 = "";
+
+  for (i=1; i<=6; i++) {
+    MOSTRAR “Ingrese un número“;
+    GUARDAR num;
+    If (num>0) {
+      cond1=”positivo”;
+    }
+    if (num<0) {
+      cond1=”negativo”;
+    }
+    if (num==0) {
+      cond1=”igual a cero”;
+    }
+    if (num%2 == 0) {
+      cond2=” y par”;
+    } else {
+      cond2=” e impar”;
+    }
+    MOSTRAR “El número es ” + cond1 + cond2;
+  }
+FIN
+
+12. Pedir el ingreso de 4 números y retornar su suma en valor absoluto.
+INICIO
+  TECLADO;
+  int num=0;
+  int i=1;
+  int suma=0;
+
+  for (i=1; i<=4; i++) {
+  MOSTRAR "Ingrese un número”;
+  GUARDAR num;
+    suma = suma + num;
+  }
+
+  if (suma < 0) {
+    suma = suma * -1;
+  }
+
+  MOSTRAR “El resultado es ” + suma;
+FIN
+
+13. Pedir el ingreso de números hasta que se ingrese un 0.
+INICIO
+  TECLADO;
+  int num=1;
+
+  MOSTRAR “Ingrese números hasta ingresar el número cero (0)”;
+  while (num!=0) {
+    MOSTRAR “Ingrese un número”;
+    GUARDAR num;
+  }
+
+  MOSTRAR “El programa ha finalizado, se ha ingresado el número cero (0)”;
+FIN
+
+14. Pedir el ingreso de números hasta que se ingrese un 0. Mostrar la suma de ellos. 
+INICIO
+  TECLADO;
+  int num=1;
+  int suma=0;
+
+  MOSTRAR “El programa calcula la suma de los valores ingresados por el usuario. Presione cero (0) para finalizar.”;
+  while (num!=0) {
+    MOSTRAR “Ingrese un número:”;
+    GUARDAR num;
+    suma = suma+num;
+  }
+
+  MOSTRAR “El programa ha finalizado, se ha ingresado el número cero (0)”;
+  MOSTRAR “La suma de los números ingresados es ” + suma;
+FIN
+
+15. Pedir el ingreso de números hasta que se ingrese un 0. Mostrar el promedio de ellos.
+INICIO
+  TECLADO;
+  float num = 1;
+  float contador = 0;
+  float suma = 0;
+  float prom = 0;
+
+  MOSTRAR “El programa calcula el promedio de los valores ingresados por el usuario. Presione cero (0) para finalizar.“;
+  while (num!=0) {
+    MOSTRAR “Ingrese un número:”;
+    GUARDAR num;
+    suma = suma + num;
+    contador++;
+  }
+  prom = suma / (contador-1);
+
+  MOSTRAR “El programa ha finalizado, se ha ingresado el número cero (0)”;
+  MOSTRAR “El promedio de los números ingresados es ” + prom;
+
+FIN
+
+16. Mostrar los números múltiplos de 2 y mayores a 9 entre 0 y 30.
+INICIO
+  for (int i=0; i<30; i++) {
+    if ((i%2==0) && (i>9)) {
+      MOSTRAR i;
+    }
+  }
+FIN
+
+17. Mostrar los números múltiplos de 2 o mayores a 9 entre 0 y 30.
+INICIO
+  for (int i=0; i<30; i++) {
+    if ((i%2==0) || (i>9)) {
+      MOSTRAR i;
+    }
+  }
+FIN
+
+18. Mostrar el resultado del examen:
+a. Si la nota está entre 0 y 59 → Eliminado
+b. Si la nota está entre 60 y 79 → Aprobado
+c. Si la nota está entre 80 y 100 → Aprobado con Excelente
+d. Si el numero esta fuera de 0 y 100, mostrar que se ha ingresado una nota invalida
+
+INICIO
+  TECLADO;
+  int nota = 0;
+
+  MOSTRAR “Ingrese la nota”;
+  GUARDAR nota;
+
+  if ((nota<0) || (nota>100)) {
+    MOSTRAR “Se ha ingresado una nota inválida”;
+  } else if ((nota>=0) && (nota<=59)) {
+    MOSTRAR “Eliminado”;
+  } else if ((nota>=60) && (nota<=79)) {
+    MOSTRAR “Aprobado”;
+  } else if ((nota>=80) && (nota<=100)) {
+    MOSTRAR “Aprobado con excelente”;
+  }
+FIN
+
+19. Pedir el ingreso de 3 números e indicar cual es el repetido. Ej.  1  4  4. ---> El número repetido es el 4.
+INICIO
+  TECLADO;
+  int num1 = 0;
+  int num2 = 0;
+  int num3 = 0;
+  int repetido = 0;
+
+  MOSTRAR "El sistema determina si se ingresa un número repetido.";
+  MOSTRAR "Ingrese el primer número:";
+  GUARDAR num1;
+  MOSTRAR "Ingrese el segundo número:";
+  GUARDAR num2;
+  MOSTRAR "Ingrese el tercer número:"; 
+  GUARDAR num3;
+
+  if (num1 == num2) {
+    repetido = num1;
+  } else if (num1 == num3) {
+    repetido = num1;
+  } else if (num2 == num3) {
+    repetido = num2;
+  }
+  MOSTRAR "El número repetido es " + repetido;
+FIN
+
+20. Programa Java que lea dos números y muestre los números desde el menor hasta el mayor.
+INICIO
+  TECLADO;
+  int num = 0;
+  int max = 0;
+  int min = 0;
+
+  MOSTRAR "El programa muestra los números comprendidos entre dos números ingresados por el usuario.";
+  MOSTRAR "Ingrese el primer número:";
+  GUARDAR min;
+  MOSTRAR "Ingrese el segundo número:";
+  GUARDAR num;
+
+  if (min != num) {
+    if (num > min) {
+      max = num;
+    } else if (num < min) {
+      max = min;
+      min = num;
+    }
+
+    for (int i=min; i<=max; i++) {
+      MOSTRAR i;
+    }
+  } else {
+    MOSTRAR "Los números son iguales, no no se puedne mostrar números comprendidos entre ellos.";
+  }
+FIN
+
+21. Programa Java que lea dos números y muestre los números impares entre ellos.
+INICIO
+  TECLADO;
+  int num = 0;
+  int max = 0;
+  int min = 0;
+
+  MOSTRAR "El programa muestra los números impares comprendidos entre dos números ingresados por el usuario.";
+  MOSTRAR "Ingrese el primer número:";
+  GUARDAR min;
+  MOSTRAR "Ingrese el segundo número:";
+  GUARDAR num;
+
+  if (min != num) {
+    if (num > min) {
+      max = num;
+    } else if (num < min) {
+      max = min;
+      min = num;
+    }
+
+    for (int i=min+1; i<max; i++) {
+      if (i%2 != 0) {
+        MOSTRAR i;
+      }
+    }
+  } else {
+    MOSTRAR "Los números son iguales, no no se puedne mostrar números comprendidos entre ellos.";
+  }
+FIN
+
+22. Pedir el ingreso de números hasta que se ingrese un número múltiplo de 7.
+INICIO
+  TECLADO;
+  int num=0;
+
+  MOSTRAR "El programa permite el ingreso de números hasta que se ingrese un múltiplo de 7, momento en que finaliza el programa.";
+  while (num%7!=0) {
+    MOSTRAR "Ingrese un número:";
+    GUARDAR num;
+  }
+  MOSTRAR "El programa ha finalizado, se ha ingresado un múltiplo de 7.";
+FIN
+
+23. Programa Java que muestre los números del 1 al 10 utilizando la instrucción MIENTRAS (WHILE).
+INICIO 
+  int i=1;
+  while (i<=10) {
+    MOSTRAR i;
+    i++;
+  }
+FIN
+
+24. Imprimir los números del 10 al 1000, de 10 en 10.
+INICIO
+  for (int i=10; i<=1000; i=i+10) {
+    MOSTRAR i;
+  }
+FIN
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
