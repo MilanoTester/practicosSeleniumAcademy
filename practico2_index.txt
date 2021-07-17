@@ -1,0 +1,42 @@
+Práctico 2: Lenguaje Java
+
+1. Mostrar “Holamundo” en pantalla
+2. Pedir el ingreso del nombre y el año de nacimiento. Mostrar el nombre y la edad de la persona.
+3. Pedir el ingreso de 3 números y mostrar la suma de ellos.
+4. Pedir el ingreso de un dato, e indicar si es menor o mayor a 0.
+5. Pedir el ingreso de 3 números, indicar si hay números repetidos.
+6. Pedir el ingreso de 3 números, indicar si hay números repetidos utilizando solo un IF.
+7. Pedir el ingreso de 3 números e indicar si NO hay repetidos, es decir, si son todos diferentes.
+8. Pedir el ingreso de números hasta que aparezca uno negativo.
+9. Programa Java que pida un número NUM ingresado por el usuario. Luego muestre los números desde 1 hasta NUM utilizando la instrucción for. Ejemplo NUM = 5 →  1 2 3 4 5.
+10. Programa Java que lea dos números y muestre los números entre ellos.
+11. Programa que lea 6 números e indique en pantalla si son positivos o negativos y pares o impares Ej. 5 es positivo e impar, -4 es negativo y par.
+12. Pedir el ingreso de 4 números y retornar su suma en valor absoluto.
+13. Pedir el ingreso de números hasta que se ingrese un 0.
+14. Pedir el ingreso de números hasta que se ingrese un 0. Mostrar la suma de ellos.
+15. Pedir el ingreso de números hasta que se ingrese un 0. Mostrar el promedio de ellos.
+16. Mostrar el resultado del examen:
+      a. Si la nota está entre 0 y 59 → Eliminado
+      b. Si la nota está entre 60 y 79 → Aprobado
+      c. Si la nota está entre 80 y 100 → Aprobado con Excelente
+      d. Si el numero esta fuera de 0 y 100, mostrar que se ha ingresado una nota invalida
+17. Imprimir los números del 1 al 10.
+18. Imprimir los números del 10 al 1000, de 10 en 10.
+19. Imprimir los números del 20 al 10, de forma decreciente.
+20. Programa Java que muestre los números del 1 al 10 utilizando la instrucción for.
+21. Mostrar los números pares de 1 a 4000.
+22. Mostrar los números entre 90 y 100, de forma decreciente. Ej. 100, 99, 98….. 90.
+23. Mostrar los números múltiplos de 3, que se encuentran entre 10 al 40 utilizando un for. Es decir 12,15,18…
+24. Que pasaría si el for comienza en 0 en vez de 10? 
+25. Utilizando un for, mostrar de 4 en 4 iniciando en 1 y hasta 500.
+26. Calcular la suma de los 10 primeros números naturales.
+27. Mostrar por pantalla cuantos múltiplos de 3 existen entre el 10 y el 70.
+28. Calcula el factorial del número 5.
+29. Programa Java que muestre los números del 1 al 10 utilizando la instrucción while.
+30. Imprimir los números del 1 al 10.
+31. Imprimir los números del 10 al 1000, de 10 en 10.
+32. Mostrar los múltiplos de 9 entre 0 y 100 que sean impares.
+33. Pedir el ingreso de números hasta que aparezca uno negativo. Indicar el promedio de todos los números ingresados.
+34. Pedir el ingreso de números hasta que se ingrese 0 y se muestre el promedio de los mismos.
+
+
