@@ -1,0 +1,64 @@
+
+Práctico 3: 
+
+Métodos:
+1. Escribir un método que reciba un número y retorne su doble.
+2. Método que reciba un número entero e imprima en pantalla en caso de ser mayor a 20, “Es mayor a 20”. De lo contrario, imprimir “No es mayor a 20”.
+3. Método que reciba dos enteros y retorne la multiplicación de la misma. 
+4. Método que reciba dos números y retorne su suma.
+5. Método que reciba un número entero y un número double, y retorne su multiplicación. Que tipo de retorno tiene este método?
+6. Realizar un método que reciba dos números y retorne el mayor ambos.
+7. Crear un método que reciba un número entero n, y muestre en pantalla la suma desde 1 hasta ese número n. Ej. Si n es 4, se debe mostrar en pantalla 10.
+8. Crear un método que retorne verdadero si y sólo si el número es par, de lo contrario, debe retornar falso. 
+9. Crear un método que reciba el radio de un círculo, y retorne su área (radio^2)*PI (utilizar una variable estática para el valor de PI).
+10. Crear un método que reciba el alto y ancho de un paralelogramo tipo, y retorne su area.
+11. Crear un método que reciba un entero, y muestre en pantalla la cantidad de dólares y de euros que representa ese número.
+12. Realizar un método llamado calcularIva, que calcule el IVA (22%) dado un número float llamado sueldo, recibido por parámetro. Sugerencia: utilizar variables estáticas.
+13. Dado un número, un máximo y un mínimo (recibidos por parámetro), retorne verdadero si el número esta dentro del máximo y el mínimo. Si el número se encuentra dentro del máx y mín, el método debe mostrar  “El número es válido”, si no se debe retornar, “El número está fuera de rango”.
+14. Método llamado convertirAMillas, que reciba un entero llamado kilómetros y retorne el equivalente a las millas. Se debe imprimir el valor en millas en pantalla. (1 milla = 1.6 kms).
+15. Crear un método que retorne la suma de los números pares entre 1 y n, siendo n un parámetro. 
+16. Crear un método llamado tipoTriangulo, que dados 3 valores enteros recibidos por parámetro, imprima en pantalla si es escaleno, si es equilátero o isósceles.
+17. Crear un método llamado factorial que reciba un número y retorne el factorial de ese número.  Ej. si el número recibido es 5, se deberá retornar el siguiente valor: 5*4*3*2*1.
+    Sugerencia: utilizar un acumulador.
+18. Realizar un método llamado validarNumero, que reciba 4 parámetros: 
+      a. Un mensaje a mostrar: mensaje.
+      b. Un mensaje de error: error.
+      c. Un entero llamado: mínimo.
+      d. Un entero llamado: máximo.
+    Se debe pedir el ingreso de números indicando el mensaje por parámetro para solicitar el número. En caso de que se ingrese un número fuera del rango, mostrar el mensaje de error y pedir que reingrese un número que se encuentre dentro del rango. 
+    El método debe retornar un entero que se encuentre dentro del rango comprendido entre el máximo y el mínimo.
+19. Crear un método llamado valorAbsoluto, que reciba un número y retorne el valor absoluto del mismo. Ej. si se recibe un -4, el método debe retornar 4. 
+20. Realizar 4 métodos que reciban dos parámetros cada uno y retornen un número float. Los métodos tendrán los siguientes nombres: calcularSuma, calcularResta, calcularDivision, calcularMutiplicacion. 
+21. Realizar un método llamado calcularPromedio, que solicite el ingreso de números hasta que se ingrese 0, y que calcule el promedio de los mismos. Se debe utilizar el método ingresarNumero realizado previamente.
+
+Métodos con retorno booleano:
+22. Método que reciba dos números y retorne verdadero si el primer numero es mayor que el segundo. De lo contrario, retornar debe retornar falso.
+23. Dado un número, retorne verdadero si el número es menor a 0.
+24. Método que retorne verdadero si el número recibido por parámetro es mayor a 18. De lo contrario, se debe retornar falso.
+25. Realizar un método que retorne verdadero si el número recibido por parámetro es impar.
+26. Realizar un método que retorne verdadero si el número recibido por parámetro es impar y mayor a 20.
+27. Realizar un método llamado esPrimo que reciba un número, y retorne true si sólo si el número es primo (es divisible entre sí, y la unidad).
+28. Realizar un método que reciba dos números enteros y retorne verdadero si la suma es mayor a 100. De lo contrario, debe retornar falso.
+29. Realizar un método llamado esMayor que reciba un número, y retorne verdadero si el número es mayor a 0, de lo contrario, se debe retornar falso. Luego, solicitar al usuario que ingrese un número; si es positivo se debe imprimir: “El número es positivo”, de lo contrario “El número es negativo” (se debe utilizar el método realizado anteriormente).
+30. Dado una año de nacimiento, retorne verdadero si la persona tiene 18 años o más, y falso si han pasado menos años. Sugerencia: usar una variable estática.
+31. Dado un número, un máximo y un mínimo (recibidos por parámetro), retorne verdadero si el numero está dentro del máximo y el mínimo. Si el número se encuentra dentro del máx y mín, el programa debe mostrar “El número es válido”, si no, se debe retornar “El número está fuera de rango.”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
