@@ -8,16 +8,19 @@ public class automotora {
 
         // Crear un camión sin parámetros
         Camion camion1 = new Camion();
+        int identificador1 = camion1.getIDENTIFICADOR();
         // Mostrar camión 1 sin usar método toString
-        System.out.println("El camión " + camion1.getIDENTIFICADOR() + " tiene chapa " + camion1.getChapa() + " y color " + camion1.getColor());
+        System.out.println("El camión " + identificador1 + " tiene chapa " + camion1.getChapa() + " y color " + camion1.getColor());
 
         // Crear un camión con un parámetro
         Camion camion2 = new Camion(1234);
+        int identificador2 = camion2.getIDENTIFICADOR();
         // Mostrar camión 2 usando método toString
         System.out.println(camion2);
 
         // Crear un camión con dos parámetros y mostrarlo
         Camion camion3 = new Camion(5678, "azul");
+        int identificador3 = camion3.getIDENTIFICADOR();
         System.out.println(camion3);
 
 
@@ -33,6 +36,7 @@ public class automotora {
         int unAñoCompra = input.nextInt();
 
         Camion camion4 = new Camion(unaChapa, unColor, unAñoCompra);
+        int identificador4 = camion4.getIDENTIFICADOR();
         System.out.println(camion4);
 
 
@@ -40,17 +44,10 @@ public class automotora {
         boolean camionesIguales = camion3.tienenMismoColor(camion4);
 
         if (camionesIguales == true) {
-            System.out.println("Los camiones " + camion3.getIDENTIFICADOR() + " y " + camion4.getIDENTIFICADOR() + " sí tienen el mismo color.");
+            System.out.println("Los camiones " + identificador3 + " y " + identificador4 + " sí tienen el mismo color.");
         } else {
-            System.out.println("Los camiones " + camion3.getIDENTIFICADOR() + " y " + camion4.getIDENTIFICADOR() + " no tienen el mismo color.");
+            System.out.println("Los camiones " + identificador3 + " y " + identificador4 + " no tienen el mismo color.");
         }
-
-        // Mensajes para conocer valores de atibutos de camiones. HAY UN PROBLEMA CON LOS IDENTIFICADORES.
-        System.out.println("Estos son los camiones hasta ahora:");
-        System.out.println(camion1);
-        System.out.println(camion2);
-        System.out.println(camion3);
-        System.out.println(camion4);
 
         System.out.println("Fin");
     }
