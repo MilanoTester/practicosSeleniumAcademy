@@ -5,9 +5,13 @@ public class Tester extends Empleado {
     private boolean testerAutomatizador;
 
     // Constructor con 2 parámetros: testerManual y testerAutomatizador
-    public Tester(boolean esManual, boolean esAutomatizador) {
+    public Tester(String unNombre, int unTelefono, float unSueldo, boolean esManual, boolean esAutomatizador) {
+        super(unNombre, unTelefono, unSueldo);
         this.testerManual = esManual;
         this.testerAutomatizador = esAutomatizador;
+        if (esAutomatizador == true) {
+            this.testerManual = true;
+        }
     }
 
     // Métodos get
@@ -28,16 +32,16 @@ public class Tester extends Empleado {
 
     // Método toString
     public String toString() {
-        String retorno = "";
+        String retorno = super.toString();
         if (this.getTesterManual() == true) {
-            retorno = " es Manual.";
+            retorno += " Es tester manual.";
         } else {
-            retorno = " NO es Manual.";
+            retorno += " NO es tester manual.";
         }
         if (this.getTesterAutomatizador() == true) {
-            retorno += " Es Automatizador.";
+            retorno += " Es tester automatizador.";
         } else {
-            retorno += " NO es Automatizador.";
+            retorno += " NO es tester automatizador.";
         }
         return retorno;
     }

@@ -4,7 +4,6 @@ public class Empleado {
     private String nombre;
     private int telefono;
     private float sueldo;
-    private static int IDENTIFICADOR;
 
 
     // Constructor sin parámetros
@@ -12,7 +11,6 @@ public class Empleado {
         this.nombre = "desconocido";
         this.telefono = 0000;
         this.sueldo = 0000.0f;
-        IDENTIFICADOR++;
     }
 
     // Constructor con 3 parámetros: nombre, sueldo, teléfono
@@ -20,7 +18,6 @@ public class Empleado {
         this.nombre = unNombre;
         this.telefono = unTelefono;
         this.sueldo = unSueldo;
-        IDENTIFICADOR++;
     }
 
 
@@ -49,7 +46,7 @@ public class Empleado {
 
     // Método toString
     public String toString() {
-        return "Nombre del empleado: " + this.getNombre() + ". Teléfono: " + this.getTelefono();
+        return "Nombre del empleado: " + this.getNombre() + ". Teléfono: " + this.getTelefono() + ". Sueldo: " + this.getSueldo() + ".";
     }
 
 }
