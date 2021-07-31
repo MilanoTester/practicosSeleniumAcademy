@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Empresa {
@@ -25,7 +26,7 @@ public class Empresa {
                 System.out.println("3 - Ingrese un nuevo Desarrollador");
                 System.out.println("4 - Ingrese un nuevo Manager");
                 System.out.println("0 - Salir del programa");
-                opcionMenu = input.nextInt();
+                opcionMenu = JavaUtils.ingresarInteger("Ingrese su opción:");
             }
 
             if (opcionMenu == 0) {
@@ -64,9 +65,6 @@ public class Empresa {
                 }
             }
         }
-
-        JavaUtils.mensajeFin();
     }
-
 
 }

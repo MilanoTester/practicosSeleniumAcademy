@@ -1,11 +1,12 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class JavaUtils {
 
     // Mensaje de Bienvenida
     public static void mensajeBienvenida() {
-        System.out.println("Bienvenido al Registro de Empleados");
+        System.out.println("Bienvenido al programa!");
     }
 
     public static void mensajeFin() {
@@ -14,22 +15,37 @@ public class JavaUtils {
 
     public static int ingresarInteger(String unMensaje) {
         Scanner input = new Scanner(System.in);
-        System.out.println(unMensaje);
-        int num = input.nextInt();
+        int num = 0;
+        try {
+            System.out.println(unMensaje);
+            num = input.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Error! Debía ingresar un número entero. Comuníquese con el Administrador.");
+        }
         return num;
     }
 
     public static float ingresarFloat(String unMensaje) {
         Scanner input = new Scanner(System.in);
-        System.out.println(unMensaje);
-        float num = input.nextFloat();
+        float num = 0f;
+        try {
+            System.out.println(unMensaje);
+            num = input.nextFloat();
+        } catch (InputMismatchException e){
+            System.out.println("Error! Debía ingresar un número entero o decimal. Comuníquese con el Administrador.");
+        }
         return num;
     }
 
     public static double ingresarDouble(String unMensaje) {
         Scanner input = new Scanner(System.in);
-        System.out.println(unMensaje);
-        double num = input.nextDouble();
+        double num = 0d;
+        try {
+            System.out.println(unMensaje);
+            num = input.nextDouble();
+        } catch (InputMismatchException e){
+            System.out.println("Error! Debía ingresar un número entero o decimal. Comuníquese con el Administrador.");
+        }
         return num;
     }
 
@@ -59,7 +75,6 @@ public class JavaUtils {
             }
 
         }
-
         return valorBooleano;
     }
 
